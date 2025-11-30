@@ -8,11 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  submitContactForm,
-  contactFormSchema,
-  type ContactFormData,
-} from "@/lib/actions/contact";
+import { submitContactForm } from "@/lib/actions/contact";
+import { contactFormSchema, type ContactFormData } from "@/lib/schemas/contact";
 import { Loader2, CheckCircle, XCircle } from "lucide-react";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
