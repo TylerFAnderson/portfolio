@@ -314,13 +314,31 @@ export default function SandboxPage() {
         <div className="space-y-16">
           {/* Mux Carousel */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Mux Carousel Clone</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              <a 
+                href="https://www.mux.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline decoration-muted-foreground/30 hover:decoration-primary"
+              >
+                Mux Carousel Clone
+              </a>
+            </h3>
             <Carousel3D />
           </div>
 
-          {/* Vercel/Linear Style Button */}
+          {/* Zed Style Button */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Linear-style 3D Button</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              <a 
+                href="https://zed.dev/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline decoration-muted-foreground/30 hover:decoration-primary"
+              >
+                Zed-style 3D Button
+              </a>
+            </h3>
             <div className="flex items-center gap-4 p-8 bg-muted/20 rounded-xl border border-border/50">
               
               {/* The Button - Zed/Linear Style (True Inset) */}

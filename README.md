@@ -1,135 +1,42 @@
-# Tyler Anderson - Portfolio Website
+# Tyler Anderson
 
-A modern, performant portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
+**Senior Product Designer** with a passion for creating intuitive, user-centered digital experiences.
 
-🌐 **Live Site**: [tyleranderson.me](https://tyleranderson.me)  
-📦 **GitHub**: [TylerFAnderson/portfolio](https://github.com/TylerFAnderson/portfolio)
+🌐 **Portfolio**: [tyleranderson.me](https://tyleranderson.me)
 
-## 🚀 Tech Stack
+---
 
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript (Strict Mode)
-- **Styling:** Tailwind CSS v4
-- **UI Components:** shadcn/ui + Radix UI
-- **Animations:** Framer Motion
-- **Forms:** React Hook Form + Zod
-- **Theme:** next-themes (Dark/Light mode)
-- **Deployment:** Vercel
+## About This Project
 
-## ✨ Features
+This is my personal portfolio website, built from scratch to showcase my design work while simultaneously learning modern web development. It's a testament to the idea that designers can (and should) understand the medium they're designing for.
 
-- 🎨 Pixel-perfect, responsive design
-- 🌗 Dark mode support
-- ⚡ Optimized performance (Server Components, code splitting)
-- 🎭 Smooth animations and transitions
-- ♿ Accessibility-first (WCAG 2.1 AA)
-- 📱 Mobile-friendly
-- 🔍 SEO optimized
-- 📝 Type-safe with TypeScript
-- 🎯 Contact form with validation
+## Tech Stack
 
-## 📁 Project Structure
+Built with modern, production-grade technologies:
 
-```
-portfolio/
-├── src/
-│   ├── app/              # Next.js App Router pages
-│   ├── components/       # React components
-│   │   ├── ui/          # shadcn/ui components
-│   │   ├── layout/      # Header, Footer, etc.
-│   │   ├── sections/    # Page sections
-│   │   └── animations/  # Animation wrappers
-│   ├── lib/
-│   │   ├── actions/     # Server Actions
-│   │   ├── data/        # Data files
-│   │   ├── hooks/       # Custom hooks
-│   │   └── utils.ts     # Utility functions
-│   ├── types/           # TypeScript types
-│   └── config/          # Configuration files
-├── public/              # Static assets
-└── ...config files
-```
+- **Next.js 15** (App Router) - React framework
+- **TypeScript** - Type safety and better DX
+- **Tailwind CSS v4** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **shadcn/ui** - Accessible component primitives
+- **Vercel** - Deployment and hosting
 
-## 🛠️ Getting Started
+## Highlights
 
-### Prerequisites
+- ⚡️ **Performance-first**: Server components, code splitting, and optimized assets
+- 🎨 **Pixel-perfect design**: Every detail carefully crafted
+- ♿️ **Accessible**: WCAG 2.1 AA compliant
+- 🌗 **Dark mode**: Thoughtfully designed for both themes
+- 📱 **Responsive**: Seamless experience across all devices
 
-- Node.js 18+ 
-- npm or pnpm
+## Development Philosophy
 
-### Installation
+This project represents my journey from design to code. Every component was built with the same attention to detail I bring to my design work—clean, maintainable, and built to last.
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-```
+---
 
-2. Install dependencies
-```bash
-npm install
-```
+## License
 
-3. Run the development server
-```bash
-npm run dev
-```
+MIT License - Feel free to learn from the code, but please don't copy the design or content directly.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## 📝 Customization
-
-### Update Your Information
-
-1. **Site Config** (`src/config/site.ts`)
-   - Update name, title, description
-   - Add your social media links
-
-2. **Projects** (`src/lib/data/projects.ts`)
-   - Add your actual projects
-   - Update project images (place in `public/images/projects/`)
-
-3. **Experience** (`src/lib/data/experience.ts`)
-   - Update work experience
-
-4. **Skills** (`src/lib/data/skills.ts`)
-   - Update your skills
-
-5. **Social Links** (`src/lib/data/social.ts`)
-   - Add your social media profiles
-
-### Add Project Images
-
-Place project images in `public/images/projects/` and update the image paths in `projects.ts`.
-
-## 🚢 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Configure your custom domain (optional)
-4. Deploy!
-
-### Other Platforms
-
-This is a standard Next.js app and can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Render
-
-## 📚 Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [shadcn/ui](https://ui.shadcn.com)
-- [Framer Motion](https://www.framer.com/motion/)
-
-## 📄 License
-
-MIT License - feel free to use this template for your own portfolio!
-
-## 🙏 Acknowledgments
-
-Built with modern best practices and inspired by the design community.
+**© 2025 Tyler Anderson**
