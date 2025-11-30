@@ -1,0 +1,35 @@
+/* iOS Pointer Demo - Motion+ Example Styles */
+/* Source: https://motion.dev/examples/react-ios-pointer */
+/* NOTE: This is a demo page, local development only */
+
+.iosButton {
+  background: none;
+  padding: 8px;
+  color: #0A84FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(255, 255, 255, 0.27);
+  border-radius: 0;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.iosButton > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.iosCursor {
+  pointer-events: none;
+}
+
+/* Hide default browser cursor on this demo page */
+.hideDefaultCursor,
+.hideDefaultCursor * {
+  cursor: none !important;
+}
+

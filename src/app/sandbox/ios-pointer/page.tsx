@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import styles from "./styles.module.css";
 
 /**
  * iOS POINTER DEMO - Development Only
@@ -30,7 +31,7 @@ function IOSPointer() {
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-[60vh]">
-      <motion.button ref={ref} className="ios-button" whileTap="pressed">
+      <motion.button ref={ref} className={styles.iosButton} whileTap="pressed">
         <motion.span
           variants={{ pressed: { scale: 0.95 } }}
           style={pull}
@@ -47,7 +48,7 @@ function IOSPointer() {
 
       <Cursor
         magnetic
-        className="ios-cursor"
+        className={styles.iosCursor}
         variants={{
           default: {
             backgroundColor:
@@ -89,7 +90,7 @@ function Chevron() {
 
 export default function IOSPointerDemo() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 hide-default-cursor">
+    <div className={`container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 ${styles.hideDefaultCursor}`}>
       {/* Back to Sandbox */}
       <div className="mb-8">
         <Link href="/sandbox">

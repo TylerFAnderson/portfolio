@@ -6,21 +6,15 @@ import type { SocialLink } from "@/types";
 export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername", // Update with your GitHub
+    url: "https://github.com/TylerFAnderson",
     icon: "github",
-    username: "@yourusername",
+    username: "@TylerFAnderson",
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourprofile", // Update with your LinkedIn
+    url: "https://www.linkedin.com/in/tylerwahoo/",
     icon: "linkedin",
     username: "Tyler Anderson",
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/yourhandle", // Update if you have Twitter
-    icon: "twitter",
-    username: "@yourhandle",
   },
   {
     name: "Dribbble",

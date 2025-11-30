@@ -78,6 +78,7 @@ components/
 ├── layout/                 ← Things that appear on every page
 │   ├── header.tsx         ← Navigation bar at top
 │   ├── footer.tsx         ← Footer at bottom
+│   ├── copy-email.tsx     ← Email copy button with feedback
 │   └── theme-toggle.tsx   ← Dark/Light mode button
 │
 ├── sections/               ← Big chunks of pages (YOUR CONTENT!)
@@ -87,9 +88,10 @@ components/
 │   ├── skills-grid.tsx             ← About page skills
 │   └── contact-form.tsx            ← Contact page form
 │
-├── animations/             ← Animation wrappers
+├── animations/             ← Animation wrappers & effects
 │   ├── fade-in.tsx        ← Makes things fade in on scroll
-│   └── stagger-children.tsx ← Makes things animate one by one
+│   ├── stagger-children.tsx ← Makes things animate one by one
+│   └── blur-fade.tsx      ← Smooth blur crossfade between states
 │
 └── providers/              ← App-wide settings
     └── theme-provider.tsx ← Makes dark mode work
@@ -200,7 +202,7 @@ public/
 → Edit `src/lib/data/experience.ts`
 
 ### Change Colors/Fonts
-→ Edit `src/app/globals.css` (CSS variables)  
+→ Edit `src/app/globals.css` (CSS variables, prose link styles)  
 → Edit `tailwind.config.ts` (theme)
 
 ### Edit Page Content
@@ -274,6 +276,6 @@ You'll mostly edit:
 
 ---
 
-**Last updated:** November 29, 2024  
+**Last updated:** November 30, 2024  
 **Status:** Production-ready, live at tyleranderson.me
 

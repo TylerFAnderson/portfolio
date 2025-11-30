@@ -2,6 +2,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { socialLinks } from "@/lib/data/social";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { CopyEmail } from "./copy-email";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   github: Github,
@@ -64,6 +65,18 @@ export function Footer() {
                 const Icon = iconMap[social.icon];
                 if (!Icon) return null;
 
+                // Special handling for email - use copy functionality
+                if (social.icon === "mail") {
+                  return (
+                    <CopyEmail
+                      key={social.name}
+                      email={social.username}
+                      className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+                    />
+                  );
+                }
+
+                // Regular links for other social platforms
                 return (
                   <Link
                     key={social.name}
