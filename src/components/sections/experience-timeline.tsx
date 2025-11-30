@@ -22,7 +22,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
             <CardContent className="p-6 sm:p-8">
               <div className="flex gap-6">
                 {/* Icon */}
-                <div className="relative z-10 flex-shrink-0">
+                <div className="relative z-10 shrink-0">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
                     <Briefcase className="h-6 w-6" />
                   </div>
