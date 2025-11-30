@@ -17,6 +17,7 @@
 - **Deployment**: Vercel (auto-deploys from main branch)
 
 ## Code Quality Standards
+- **CRITICAL: Replicate user code EXACTLY** - When Tyler provides code snippets, READ EVERY CHARACTER. Do not skim or pattern match. Analyze full class strings (especially arbitrary values like shadows/transforms) to replicate exact behavior. Correctness > Speed.
 - Write **principal-level code** - production-ready, best practices
 - Use **TypeScript strict mode** - full type safety
 - Prefer **Server Components** by default, Client Components only when needed
