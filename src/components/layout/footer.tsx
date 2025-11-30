@@ -66,7 +66,7 @@ export function Footer() {
                 if (!Icon) return null;
 
                 // Special handling for email - use copy functionality
-                if (social.icon === "mail") {
+                if (social.icon === "mail" && social.username) {
                   return (
                     <CopyEmail
                       key={social.name}
