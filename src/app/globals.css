@@ -120,3 +120,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* iOS Pointer - Motion+ Example Styles */
+.ios-button {
+  background: none;
+  padding: 8px;
+  color: #0A84FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(255, 255, 255, 0.27);
+  border-radius: 0;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.ios-button > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ios-cursor {
+  pointer-events: none;
+}
+
+/* Hide default cursor on iOS pointer demo page */
+.hide-default-cursor,
+.hide-default-cursor * {
+  cursor: none !important;
+}

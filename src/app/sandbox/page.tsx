@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 import { FadeIn } from "@/components/animations/fade-in";
 import { StaggerChildren, childVariants } from "@/components/animations/stagger-children";
 import { motion } from "framer-motion";
@@ -386,6 +387,44 @@ export default function SandboxPage() {
             </div>
             <p className="text-xs text-muted-foreground mt-2">
               Uses inset box-shadow for 3D depth + active state transforms
+            </p>
+          </div>
+
+          {/* iOS Pointer Demo Link */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">
+              iOS Pointer Animation
+              <Badge variant="outline" className="ml-2 text-[10px]">
+                Motion+ Exclusive
+              </Badge>
+            </h3>
+            <div className="flex flex-col items-start gap-4 p-8 bg-muted/20 rounded-xl border border-border/50">
+              <p className="text-sm text-muted-foreground">
+                Experience the full iOS-style cursor morphing and magnetic snapping effect on a dedicated demo page.
+              </p>
+              <Link href="/sandbox/ios-pointer">
+                <Button variant="outline" className="gap-2">
+                  View iOS Pointer Demo
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 12L10 8L6 4"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Button>
+              </Link>
+            </div>
+            <p className="text-xs text-muted-foreground mt-2">
+              Opens dedicated demo page with custom cursor - local development only
             </p>
           </div>
         </div>
