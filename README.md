@@ -2,6 +2,9 @@
 
 A modern, performant portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
+🌐 **Live Site**: [tyleranderson.me](https://tyleranderson.me)  
+📦 **GitHub**: [TylerFAnderson/portfolio](https://github.com/TylerFAnderson/portfolio)
+
 ## 🚀 Tech Stack
 
 - **Framework:** Next.js 15 (App Router)
