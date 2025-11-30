@@ -16,8 +16,8 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
       {experiences.map((exp, index) => (
         <FadeIn key={index} delay={index * 0.1}>
           <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-colors">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-14 bottom-0 w-0.5 bg-border" />
+            {/* Timeline line - aligned to center of icon circle */}
+            <div className="absolute left-12 sm:left-14 top-14 bottom-0 w-0.5 bg-border" />
 
             <CardContent className="p-6 sm:p-8">
               <div className="flex gap-6">
