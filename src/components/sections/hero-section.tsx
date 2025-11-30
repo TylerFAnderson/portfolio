@@ -46,30 +46,6 @@ export function HeroSection() {
               </Button>
             </div>
           </FadeIn>
-
-          {/* Stats */}
-          <FadeIn direction="up" delay={0.4}>
-            <div className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto">
-              <div>
-                <div className="text-3xl font-bold text-primary">5+</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Years Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Projects Completed
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">20+</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Happy Clients
-                </div>
-              </div>
-            </div>
-          </FadeIn>
         </div>
       </div>
     </section>
