@@ -135,7 +135,7 @@ export default function IOSPointerDemo() {
           href="https://motion.dev/examples/react-ios-pointer"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-primary hover:underline mt-2 inline-block"
+          className="prose-link text-sm mt-2 inline-block"
         >
           View original example →
         </a>

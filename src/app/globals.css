@@ -3,6 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Custom property for animatable underline color */
+@property --underline-color {
+  syntax: "<color>";
+  initial-value: currentColor;
+  inherits: false;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -41,6 +48,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-prose-link: var(--prose-link);
+  --color-prose-link-hover: var(--prose-link-hover);
 }
 
 :root {
@@ -76,6 +85,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* Prose link colors - blue accent for inline text links */
+  --prose-link: oklch(0.65 0.15 250);
+  --prose-link-hover: oklch(0.55 0.22 250);
 }
 
 .dark {
@@ -110,6 +123,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  
+  /* Prose link colors - softer blues for dark mode */
+  --prose-link: oklch(0.75 0.08 250);
+  --prose-link-hover: oklch(0.7 0.12 250);
 }
 
 @layer base {
@@ -119,6 +136,55 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Prose links - Rounded underline treatment for inline text links */
+/* Opt-in: Add .prose-link class to links that should have this style */
+.prose-link {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 2px 0;
+  --underline-offset: 3px;
+  --underline-thickness: 2px;
+  --underline-color: var(--prose-link); /* Uses theme-aware color */
+  
+  --bg-pos: calc(1em + var(--underline-offset) + 1px);
+  --bg-circle: var(--underline-color);
+  --left: calc(var(--underline-thickness) / 2);
+  --width: calc(100% - var(--underline-thickness));
+  
+  --bg-line: linear-gradient(var(--underline-color), var(--underline-color))
+    no-repeat var(--left) var(--bg-pos) / var(--width) var(--underline-thickness);
+  
+  --bg-left: radial-gradient(
+      var(--underline-thickness) circle at center,
+      var(--bg-circle) 50%,
+      transparent 51%
+    )
+    no-repeat left var(--bg-pos) / var(--underline-thickness)
+    var(--underline-thickness);
+  
+  --bg-right: radial-gradient(
+      var(--underline-thickness) circle at center,
+      var(--bg-circle) 50%,
+      transparent 51%
+    )
+    no-repeat right var(--bg-pos) / var(--underline-thickness)
+    var(--underline-thickness);
+  
+  --bg-rounded-underline: var(--bg-left), var(--bg-right), var(--bg-line);
+  background: var(--bg-rounded-underline);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  
+  transition: 80ms ease-out;
+  transition-property: --underline-color, color;
+}
+
+.prose-link:hover,
+.prose-link:focus-visible {
+  color: var(--prose-link-hover);
+  --underline-color: var(--prose-link-hover);
 }
 
 /* iOS Pointer - Motion+ Example Styles */

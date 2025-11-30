@@ -320,7 +320,7 @@ export default function SandboxPage() {
                 href="https://www.mux.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors underline decoration-muted-foreground/30 hover:decoration-primary"
+                className="prose-link"
               >
                 Mux Carousel Clone
               </a>
@@ -335,7 +335,7 @@ export default function SandboxPage() {
                 href="https://zed.dev/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors underline decoration-muted-foreground/30 hover:decoration-primary"
+                className="prose-link"
               >
                 Zed-style 3D Button
               </a>
