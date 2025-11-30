@@ -1,0 +1,102 @@
+# Portfolio Project Rules
+
+## Project Overview
+- **Owner**: Tyler Anderson - Senior Product Designer
+- **Live Site**: https://tyleranderson.me
+- **GitHub**: https://github.com/TylerFAnderson/portfolio
+- **Purpose**: Personal portfolio built to learn coding while showcasing design work
+
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript (Strict mode)
+- **Styling**: Tailwind CSS v4
+- **Components**: shadcn/ui + Radix UI
+- **Animations**: Framer Motion
+- **Forms**: React Hook Form + Zod
+- **Email**: Resend
+- **Deployment**: Vercel (auto-deploys from main branch)
+
+## Code Quality Standards
+- Write **principal-level code** - production-ready, best practices
+- Use **TypeScript strict mode** - full type safety
+- Prefer **Server Components** by default, Client Components only when needed
+- Follow **Next.js 15 patterns** - Server Actions, Metadata API, etc.
+- Keep code **clean, maintainable, and well-commented**
+- No shortcuts - always use optimal patterns
+
+## File Organization
+- **Content data**: Lives in `src/lib/data/`
+- **Page content**: Lives in `src/components/sections/`
+- **UI components**: Lives in `src/components/ui/` (shadcn - rarely edit)
+- **Layouts**: Lives in `src/components/layout/`
+- **Animations**: Lives in `src/components/animations/`
+- **Types**: Lives in `src/types/`
+- **Config**: Lives in `src/config/`
+
+## Documentation
+- Keep `PROJECT_STRUCTURE.md` updated at logical checkpoints:
+  - After adding new pages or major features
+  - When folder structure changes
+  - After significant redesigns
+  - NOT for small bug fixes or CSS tweaks
+- Update `STATUS.md` when completing major milestones
+- Commit messages should be descriptive and clear
+
+## Design & Development Preferences
+- **Pixel-perfect precision** - Tyler is detail-oriented about CSS
+- **Smooth animations** - Use Framer Motion for professional effects
+- **Accessibility** - WCAG 2.1 AA compliance, semantic HTML, keyboard nav
+- **Responsive** - Mobile-first approach, perfect on all devices
+- **Dark mode** - Thoughtfully designed for both themes
+
+## Code Style
+- Use modern Tailwind utilities (e.g., `shrink-0` not `flex-shrink-0`)
+- Prefer composition over props drilling
+- Keep components small and focused
+- Use TypeScript types, not `any`
+- Comment complex logic to explain "why"
+
+## Learning & Explanations
+- **Always explain the "why"** behind technical decisions
+- Tyler has limited coding experience but can handle intermediate explanations
+- Be concise for simple stuff, detailed for complex topics
+- This is a learning project - maximize learning opportunities
+
+## Deployment Workflow
+- **Main branch** = Production (tyleranderson.me)
+- Small fixes: Push directly to main
+- Major changes: Use feature branches with Vercel preview deployments
+- Environment variables are set in Vercel (RESEND_API_KEY)
+- Auto-deploys on git push
+
+## Git Configuration
+- **Email**: ttyleranderson@gmail.com (personal, not Datadog)
+- **GPG signing**: Disabled for this project
+- Commit messages should be clear and descriptive
+
+## Content Management
+- Projects: Edit `src/lib/data/projects.ts`
+- Experience: Edit `src/lib/data/experience.ts`
+- Skills: Edit `src/lib/data/skills.ts`
+- Social links: Edit `src/lib/data/social.ts`
+- Site config: Edit `src/config/site.ts`
+- Images: Add to `public/images/projects/`
+
+## Current Status
+- ✅ Production-ready portfolio is live
+- ✅ All core pages built (Home, About, Projects, Contact)
+- ✅ Contact form sends real emails via Resend
+- ✅ Custom domain connected with SSL
+- 🎨 Next phase: Design overhaul from Figma
+
+## Future Plans
+- Tyler will design in Figma
+- Implement visual redesign while maintaining technical foundation
+- Add real project content and images
+- Potential features: blog, case studies, more animations
+
+## Notes
+- This is Tyler's **Personal** profile project (separate from Datadog work)
+- Prioritize clean, understandable code - this is a learning experience
+- When in doubt, explain the reasoning behind architectural choices
+
